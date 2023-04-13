@@ -73,7 +73,20 @@ app.get('/', (req, res) => {
     }
   }) 
 
+  app.delete("/dog_breeds/:name", (req, res) => {
 
+    const name = req.params.name.toLowerCase();
+  
+    const dogIndex = dog_breeds.findIndex(dog => dog.name.toLowerCase() === name);
+  
+    if (dogIndex === -1) {
+      res.status(404).send({ error: "dog breed does not exist" })
+    } else {
+        dog_breeds.splice(dogIndex, 1);
+  
+      res.status(204).send()
+    }
+  })
 
 
   module.exports = app;
