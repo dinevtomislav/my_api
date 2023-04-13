@@ -26,5 +26,27 @@ app.get('/', (req, res) => {
     res.send(dog)
   })
 
+  app.post('/dog_breeds', (req, res) => {
+    const ids = dog_breeds.map(dog => dog.id)
+    let maxId = Math.max(...ids)
   
+    const dog = dog_breeds.find(dog => dog.name === req.body.name)
+  
+    console.log("line 48", dog)
+  
+    if (dog !== undefined) {
+      res.status(409).send({error: "fruit already exists"})
+    } else {
+      maxId += 1
+      const newDog = req.body
+      newDog.id = maxId
+  
+      dog_breeds.push(newDog)
+  
+      res.status(201).send(newDog)
+    }
+  
+    res.status(201).send(newDog)
+  
+  })
   module.exports = app;
