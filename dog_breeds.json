@@ -1,0 +1,34 @@
+[
+    {
+      "name": "Husky",
+      "id": 1
+    },
+    {
+      "name": "Alaskan Malamute",
+      "id": 2
+    },
+    {
+      "name": "German Shepherd",
+      "id": 3
+    },
+    {
+        "name": "Australian Shepherd",
+        "id": 4
+    },
+    {
+        "name": "Pug",
+        "id": 5
+    },
+    {
+        "name": "English Bulldog",
+        "id": 6
+      },
+      {
+        "name": "English Bull Terrier",
+        "id": 7
+      },
+      {
+        "name": "Shih Tzu",
+        "id": 8
+      }
+  ]
