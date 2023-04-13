@@ -15,6 +15,16 @@ app.get('/', (req, res) => {
     res.send(dog_breeds)
   })
 
+  app.get('/dog_breeds/:name', (req, res) => {
+    const name = req.params.name.toLowerCase()
+  
+    const dog = dog_breeds.find(dog => dog.name.toLowerCase() === name)
+    console.log(dog)
+    if (dog === undefined) {
+      res.status(404).send({ error: `dog_breed: ${name} not found :(`})
+    }
+    res.send(dog)
+  })
 
-
+  
   module.exports = app;

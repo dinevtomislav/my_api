@@ -4,15 +4,15 @@
       "id": 1
     },
     {
-      "name": "Alaskan Malamute",
+      "name": "Alaskan_Malamute",
       "id": 2
     },
     {
-      "name": "German Shepherd",
+      "name": "German_Shepherd",
       "id": 3
     },
     {
-        "name": "Australian Shepherd",
+        "name": "Australian_Shepherd",
         "id": 4
     },
     {
@@ -20,15 +20,15 @@
         "id": 5
     },
     {
-        "name": "English Bulldog",
+        "name": "English_Bulldog",
         "id": 6
       },
       {
-        "name": "English Bull Terrier",
+        "name": "English_Bull_Terrier",
         "id": 7
       },
       {
-        "name": "Shih Tzu",
+        "name": "Shih_Tzu",
         "id": 8
       }
   ]
